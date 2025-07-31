@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>LOFT HOTEL</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-white text-gray-900">
+  <!-- Navigation -->
+  <header class="absolute top-0 left-0 w-full z-20" role="banner">
+    <nav class="flex justify-between items-center px-6 py-4 bg-black bg-opacity-80 text-white" aria-label="Main navigation">
+      <a href="#hero" class="text-xl font-semibold tracking-widest focus:outline-none focus:ring-2 focus:ring-white" tabindex="0" aria-label="Go to top of the page - LOFT HOTEL">
+        LOFT HOTEL
+      </a>
+      <ul class="md:flex gap-6 uppercase text-sm" role="menubar">
+        <li role="none">
+          <a href="#about" class="hover:underline focus:outline-none focus:ring-2 focus:ring-white" tabindex="0" role="menuitem" aria-label="About the hotel section">About</a>
+        </li>
+        <li role="none">
+          <a href="#rooms" class="hover:underline focus:outline-none focus:ring-2 focus:ring-white" tabindex="0" role="menuitem" aria-label="Rooms section">Rooms</a>
+        </li>
+        <li role="none">
+          <a href="#booking" class="hover:underline focus:outline-none focus:ring-2 focus:ring-white" tabindex="0" role="menuitem" aria-label="Booking section">Book</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative min-h-screen flex flex-col justify-center items-center text-center px-4 bg-cover bg-center" style="background-image: url('images/bg-hotel.jpg'); background-attachment: fixed;" aria-label="Hero section with hotel name and booking call to action">
+    <div class="absolute inset-0 bg-black bg-opacity-80"></div>
+    <div class="relative z-10 pt-16">
+      <h1 class="text-5xl md:text-7xl font-semibold mb-4 uppercase tracking-widest text-yellow-100" style="text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);">
+        LOFT HOTEL
+      </h1>
+      <p class="text-xl md:text-2xl mb-6 text-yellow-100" style="text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);">Luxury &amp; Comfort</p>
+      <a href="#booking" class="border border-white text-white px-6 py-2 hover:bg-white hover:text-black transition focus:outline-none focus:ring-2 focus:ring-white" tabindex="0" aria-label="Book now button">BOOK NOW</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" data-aos="fade-up" data-aos-delay="100" class="max-w-6xl mx-auto py-20 px-6 grid md:grid-cols-2 gap-8 items-center" aria-labelledby="about-title">
+    <div class="text-center md:text-left">
+      <h2 id="about-title" class="text-3xl mb-4 uppercase">About the Hotel</h2>
+      <p class="text-lg text-gray-800">
+        LOFT HOTEL is a modern space for relaxation and inspiration. We combine
+        refined aesthetics with comfort and high-level service.
+      </p>
+    </div>
+    <div>
+      <img src="images/about-hotel.jpg" alt="Hotel interior" class="rounded-lg shadow-lg w-full" loading="lazy" />
+    </div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms" data-aos="fade-up" data-aos-delay="200" class="bg-gray-50 py-20 px-6 max-w-6xl mx-auto" aria-labelledby="rooms-title">
+    <h2 id="rooms-title" class="text-3xl text-center mb-12 uppercase">Rooms</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Standard -->
+      <article class="room-card border p-6 bg-white rounded-xl shadow" data-aos="zoom-in" aria-label="Standard room details">
+        <h3 class="text-xl font-semibold mb-2">Standard Room</h3>
+        <p class="text-gray-800 mb-4">
+          Perfect for a short stay. Includes Wi-Fi, shower, and breakfast.
+        </p>
+        <p class="font-semibold mb-4">$100 / night</p>
+        <div class="flex gap-2 overflow-x-auto">
+          <a href="images/room1.jpg" class="glightbox focus:outline-none focus:ring-2 focus:ring-indigo-500" data-gallery="standard" tabindex="0" aria-label="View images of Standard Room">
+            <img src="images/room1.jpg" alt="Standard Room" class="w-full h-64 object-cover rounded-lg mb-2" loading="lazy" />
+          </a>
+          <a href="images/bath1.jpg" class="glightbox hidden" loading="lazy" data-gallery="standard" tabindex="-1" aria-hidden="true"></a>
+          <a href="images/bath-1.jpg" class="glightbox hidden" loading="lazy" data-gallery="standard" tabindex="-1" aria-hidden="true"></a>
+        </div>
+      </article>
+
+      <!-- Deluxe -->
+      <article class="room-card border p-6 bg-white rounded-xl shadow" data-aos="zoom-in" aria-label="Deluxe room details">
+        <h3 class="text-xl font-semibold mb-2">Deluxe Room</h3>
+        <p class="text-gray-800 mb-4">
+          Spacious room with city view. TV, bathtub, coffee machine included.
+        </p>
+        <p class="font-semibold mb-4">$150 / night</p>
+        <div class="flex gap-2 overflow-x-auto">
+          <a href="images/room2.jpg" class="glightbox focus:outline-none focus:ring-2 focus:ring-indigo-500" data-gallery="deluxe" tabindex="0" aria-label="View images of Deluxe Room">
+            <img src="images/room2.jpg" alt="Deluxe Room" class="w-full h-64 object-cover rounded-lg mb-2" loading="lazy" />
+          </a>
+          <a href="images/bath2.jpg" class="glightbox hidden" loading="lazy" data-gallery="deluxe" tabindex="-1" aria-hidden="true"></a>
+        </div>
+      </article>
+
+      <!-- Suite -->
+      <article class="room-card border p-6 bg-white rounded-xl shadow" data-aos="zoom-in" aria-label="Suite room details">
+        <h3 class="text-xl font-semibold mb-2">Suite</h3>
+        <p class="text-gray-800 mb-4">
+          Luxury suite with a separate lounge area. Full comfort for a long stay.
+        </p>
+        <p class="font-semibold mb-4">$300 / night</p>
+        <div class="flex gap-2 overflow-x-auto">
+          <a href="images/room3.jpg" class="glightbox focus:outline-none focus:ring-2 focus:ring-indigo-500" data-gallery="suite" tabindex="0" aria-label="View images of Suite">
+            <img src="images/room3.jpg" alt="Suite Bedroom" class="w-full h-64 object-cover rounded-lg mb-2" loading="lazy" />
+          </a>
+          <a href="images/living-room-3.jpg" class="glightbox hidden" loading="lazy" data-gallery="suite" tabindex="-1" aria-hidden="true"></a>
+          <a href="images/bath3.jpg" class="glightbox hidden" loading="lazy" data-gallery="suite" tabindex="-1" aria-hidden="true"></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section id="booking" data-aos="fade-up" data-aos-delay="300" class="py-20 px-6 bg-white max-w-xl mx-auto" aria-labelledby="booking-title">
+    <h2 id="booking-title" class="text-3xl text-center mb-8 uppercase">Book a Room</h2>
+    <form id="bookingForm" class="grid gap-4" novalidate aria-describedby="formInstructions" aria-live="polite">
+      <p id="formInstructions" class="sr-only">Please fill out the form below to book your room. All fields are required.</p>
+
+      <label for="name" class="sr-only">Your Name</label>
+      <input type="text" id="name" placeholder="Your Name" class="border p-3 focus:outline-none focus:ring-2 focus:ring-indigo-600" required aria-required="true" aria-describedby="nameError" tabindex="0" />
+      <div class="error-message text-red-600 text-sm hidden" id="nameError" role="alert">Please enter your name</div>
+
+      <label for="email" class="sr-only">Email Address</label>
+      <input type="email" id="email" placeholder="Email" class="border p-3 focus:outline-none focus:ring-2 focus:ring-indigo-600" required aria-required="true" aria-describedby="emailError" tabindex="0" />
+      <div class="error-message text-red-600 text-sm hidden" id="emailError" role="alert">Please enter a valid email</div>
+
+      <div class="flex gap-4">
+        <div class="flex flex-col w-1/2">
+          <label for="checkin" class="sr-only">Check-in Date</label>
+          <input type="date" id="checkin" class="border p-3 focus:outline-none focus:ring-2 focus:ring-indigo-600" required aria-required="true" aria-describedby="checkinError" tabindex="0" />
+          <div class="error-message text-red-600 text-sm hidden" id="checkinError" role="alert">
+            Please select check-in date
+          </div>
+        </div>
+        <div class="flex flex-col w-1/2">
+          <label for="checkout" class="sr-only">Check-out Date</label>
+          <input type="date" id="checkout" class="border p-3 focus:outline-none focus:ring-2 focus:ring-indigo-600" required aria-required="true" aria-describedby="checkoutError dateError" tabindex="0" />
+          <div class="error-message text-red-600 text-sm hidden" id="checkoutError" role="alert">
+            Please select check-out date
+          </div>
+          <div class="error-message text-red-600 text-sm hidden" id="dateError" role="alert">
+            Check-out must be after check-in
+          </div>
+        </div>
+      </div>
+
+      <label for="roomType" class="sr-only">Select Room Type</label>
+      <select id="roomType" class="border p-3 focus:outline-none focus:ring-2 focus:ring-indigo-600" required aria-required="true" aria-describedby="roomTypeError" tabindex="0">
+        <option value="" disabled selected>Select Room Type</option>
+        <option value="Standard">Standard</option>
+        <option value="Deluxe">Deluxe</option>
+        <option value="Suite">Suite</option>
+      </select>
+      <div class="error-message text-red-600 text-sm hidden" id="roomTypeError" role="alert">
+        Please select a room type
+      </div>
+
+      <button type="submit" id="submitBtn" class="border border-black px-6 py-2 transition opacity-50 cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-indigo-600" disabled aria-disabled="true" tabindex="0" aria-label="Submit booking form">
+        Submit
+        <svg class="ml-2 animate-pulse inline-block" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <line x1="5" y1="12" x2="19" y2="12" />
+          <polyline points="12 5 19 12 12 19" />
+        </svg>
+      </button>
+    </form>
+  </section>
+
+  <!-- Guest Reviews Section -->
+  <section id="reviews" class="max-w-6xl mx-auto py-20 px-6" aria-labelledby="reviews-title">
+    <h2 id="reviews-title" class="text-3xl text-center mb-12 uppercase">Guest Reviews</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <article class="review-card border p-6 rounded-lg shadow" tabindex="0" aria-label="Review by Anna">
+        <img src="images/review-anna.jpg" alt="Photo of Anna" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover" loading="lazy" />
+        <p class="text-gray-800 mb-2">"Wonderful stay! The staff was friendly and the rooms were spotless."</p>
+        <p class="font-semibold text-center">— Anna K.</p>
+      </article>
+      <article class="review-card border p-6 rounded-lg shadow" tabindex="0" aria-label="Review by Mark">
+        <img src="images/review-mark.jpg" alt="Photo of Mark" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover" loading="lazy" />
+        <p class="text-gray-800 mb-2">"Excellent location and great spa facilities. Highly recommended!"</p>
+        <p class="font-semibold text-center">— Mark L.</p>
+      </article>
+      <article class="review-card border p-6 rounded-lg shadow" tabindex="0" aria-label="Review by Sofia">
+        <img src="images/review-sofia.jpg" alt="Photo of Sofia" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover" loading="lazy" />
+        <p class="text-gray-800 mb-2">"The restaurant served delicious meals and the fitness center was well equipped."</p>
+        <p class="font-semibold text-center">— Sofia M.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Hotel Services Section -->
+  <section id="services" class="bg-gray-50 py-20 px-6 max-w-6xl mx-auto" aria-labelledby="services-title">
+  <h2 id="services-title" class="text-3xl text-center mb-12 uppercase">Our Services</h2>
+  <ul class="grid md:grid-cols-4 gap-8 text-center text-gray-800">
+    <li class="service-item p-6 border rounded-lg shadow flex flex-col items-center" tabindex="0" aria-label="Spa and Wellness service">
+      <i class="fas fa-spa text-indigo-600 text-5xl mb-4" aria-hidden="true"></i>
+      <span class="text-xl font-semibold mb-2">Spa & Wellness</span>
+      <p class="text-gray-700">Relax and rejuvenate with our luxurious spa treatments.</p>
+    </li>
+    <li class="service-item p-6 border rounded-lg shadow flex flex-col items-center" tabindex="0" aria-label="Fitness Center service">
+      <i class="fas fa-dumbbell text-indigo-600 text-5xl mb-4" aria-hidden="true"></i>
+      <span class="text-xl font-semibold mb-2">Fitness Center</span>
+      <p class="text-gray-700">State-of-the-art gym with modern equipment.</p>
+    </li>
+    <li class="service-item p-6 border rounded-lg shadow flex flex-col items-center" tabindex="0" aria-label="Restaurant and Bar service">
+      <i class="fas fa-utensils text-indigo-600 text-5xl mb-4" aria-hidden="true"></i>
+      <span class="text-xl font-semibold mb-2">Restaurant & Bar</span>
+      <p class="text-gray-700">Delicious meals and drinks in a cozy atmosphere.</p>
+    </li>
+    <li class="service-item p-6 border rounded-lg shadow flex flex-col items-center" tabindex="0" aria-label="Free Wi-Fi service">
+      <i class="fas fa-wifi text-indigo-600 text-5xl mb-4" aria-hidden="true"></i>
+      <span class="text-xl font-semibold mb-2">Free Wi-Fi</span>
+      <p class="text-gray-700">Stay connected with high-speed internet access.</p>
+    </li>
+  </ul>
+</section>
+
+  <!-- Promotions Section -->
+  <section id="promotions" class="max-w-6xl mx-auto py-20 px-6" aria-labelledby="promotions-title">
+  <h2 id="promotions-title" class="text-3xl text-center mb-12 uppercase flex items-center justify-center gap-3 text-indigo-700">
+    <i class="fas fa-tags text-4xl" aria-hidden="true"></i>
+    Special Offers
+  </h2>
+  <div class="grid md:grid-cols-2 gap-8 text-gray-800">
+    <article class="promo-card border p-6 rounded-lg shadow flex items-start gap-4" tabindex="0" aria-label="Summer discount offer">
+      <i class="fas fa-sun text-yellow-500 text-3xl mt-1" aria-hidden="true"></i>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Summer Discount</h3>
+        <p>Book your stay between June and August and get 20% off on all room types.</p>
+      </div>
+    </article>
+    <article class="promo-card border p-6 rounded-lg shadow flex items-start gap-4" tabindex="0" aria-label="Spa package offer">
+      <i class="fas fa-spa text-pink-500 text-3xl mt-1" aria-hidden="true"></i>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Spa Package</h3>
+        <p>Enjoy a relaxing spa session with every booking of Deluxe or Suite rooms.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="bg-gray-50 py-20 px-6 max-w-6xl mx-auto" aria-labelledby="faq-title">
+    <h2 id="faq-title" class="text-3xl text-center mb-12 uppercase">FAQ</h2>
+    <dl class="space-y-6 max-w-3xl mx-auto text-gray-800">
+      <div tabindex="0" aria-label="Question: What is the check-in time?">
+        <dt class="font-semibold cursor-pointer">What is the check-in time?</dt>
+        <dd class="mt-2">Check-in starts at 2 PM. Early check-in is available upon request and subject to availability.</dd>
+      </div>
+      <div tabindex="0" aria-label="Question: Is breakfast included?">
+        <dt class="font-semibold cursor-pointer">Is breakfast included?</dt>
+        <dd class="mt-2">Breakfast is included in the price for all room types.</dd>
+      </div>
+      <div tabindex="0" aria-label="Question: Do you offer airport shuttle?">
+        <dt class="font-semibold cursor-pointer">Do you offer airport shuttle?</dt>
+        <dd class="mt-2">Yes, airport shuttle service is available at an additional cost. Please book in advance.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-6xl mx-auto py-20 px-6" aria-labelledby="contact-title">
+    <h2 id="contact-title" class="text-3xl text-center mb-12 uppercase">Contact Us</h2>
+    <div class="grid md:grid-cols-2 gap-8 text-gray-800">
+      <div>
+        <p class="mb-4">📍 123 Loft Street, Cityname, Country</p>
+        <p class="mb-4">📞 <a href="tel:+1234567890" class="underline hover:text-indigo-600">+1 234 567 890</a></p>
+        <p class="mb-4">📧 <a href="mailto:info@lofthotel.com" class="underline hover:text-indigo-600">info@lofthotel.com</a></p>
+      </div>
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789012!2d-122.41941548468158!3d37.7749297797594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064f0e39c1f%3A0x5a4f0a9c7d0b7f7d!2sLoft%20Hotel!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Map location of Loft Hotel"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-10 text-sm text-gray-600 bg-gray-100 max-w-full" role="contentinfo">
+    <p>© 2025 LOFT HOTEL. All rights reserved.</p>
+    <nav aria-label="Social media links" class="mt-4 flex justify-center gap-4">
+      <a href="#" class="hover:text-black focus:outline-none focus:ring-2 focus:ring-indigo-600" tabindex="0" aria-label="Visit Instagram page">Instagram</a>
+      <a href="#" class="hover:text-black focus:outline-none focus:ring-2 focus:ring-indigo-600" tabindex="0" aria-label="Visit Facebook page">Facebook</a>
+      <a href="#" class="hover:text-black focus:outline-none focus:ring-2 focus:ring-indigo-600" tabindex="0" aria-label="Contact us">Contact</a>
+    </nav>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- GLightbox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <!-- Your external JS -->
+  <script src="script.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false,
+    });
+
+    const lightbox = GLightbox({
+      selector: '.glightbox',
+    });
+  </script>
+</body>
+</html>
