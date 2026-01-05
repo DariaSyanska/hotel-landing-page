@@ -26,6 +26,9 @@ The website presents a modern, stylish hotel interface with sections like About,
 - Contact form
 - Footer with links
 
+## Demo
+https://hotel-landing-page-pi-amber.vercel.app/
+
 ## 📩 Contact
 
 For questions or collaboration:  
