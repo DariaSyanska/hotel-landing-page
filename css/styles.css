@@ -847,7 +847,46 @@ section {
 
 /* Mobile Devices (max-width: 768px) */
 @media (max-width: 768px) {
-  /* 1. Mobile Navigation (Hamburger Menu) */
+  /* 1. Hero Background Image */
+  .hero-section {
+    background-attachment: scroll !important;
+    background-position: center center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  /* 2. Form Inputs */
+  .booking-wrapper {
+    padding: 30px 20px;
+    width: 100%;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .form-control {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: var(--radius);
+  }
+
+  input[type="date"] {
+    min-width: 95%;
+    display: block;
+  }
+
+  /* 3. Mobile Navigation (Hamburger Menu) */
   .menu-toggle {
     display: block;
     position: relative;
@@ -892,7 +931,7 @@ section {
     font-size: 1.5rem;
   }
 
-  /* 2. Hero Section Typography */
+  /* 4. Hero Section Typography */
   .hero-content h1 {
     font-size: 2.2rem;
   }
@@ -901,7 +940,7 @@ section {
     font-size: 1rem;
   }
 
-  /* 3. Section Spacing */
+  /* 5. Section Spacing */
   section {
     padding: 50px 0;
   }
@@ -911,7 +950,7 @@ section {
     margin-bottom: 2rem;
   }
 
-  /* 4. Booking Form Layout */
+  /* 6. Booking Form Layout */
   .booking-wrapper {
     padding: 25px 20px;
   }
@@ -921,7 +960,7 @@ section {
     gap: 15px;
   }
 
-  /* 5. Contact Map & Images */
+  /* 7. Contact Map & Images */
   .contact-map {
     height: 300px;
     margin-top: 20px;
