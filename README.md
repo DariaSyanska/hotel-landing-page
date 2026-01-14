@@ -2,7 +2,7 @@
 
 A modern, responsive landing page for a luxury hotel in New York featuring functional booking logic.
 
-🔗 **[Live Demo]()**
+🔗 **[Live Demo](https://hotel-landing-page-pi-amber.vercel.app/)**
 
 ## ✨ Features
 - **Responsive Design**: Fully adapted for Mobile, Tablet, and Desktop.
