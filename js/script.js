@@ -150,3 +150,45 @@ if (checkinInput && checkoutInput && roomSelect) {
   checkoutInput.addEventListener("change", calculatePrice);
   roomSelect.addEventListener("change", calculatePrice);
 }
+
+/* =========================================
+   8. HANDLE FORM SUBMISSION (AJAX)
+   ========================================= */
+const bookingForm = document.getElementById("bookingForm");
+
+if (bookingForm) {
+  bookingForm.addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    const submitBtn = document.getElementById("submitBtn");
+    const originalText = submitBtn.innerText;
+
+    submitBtn.innerText = "Sending...";
+    submitBtn.disabled = true;
+
+    const formData = new FormData(bookingForm);
+
+    try {
+      const response = await fetch(bookingForm.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        bookingForm.reset();
+        window.location.href = "success.html";
+      } else {
+        alert("Oops! There was a problem submitting your form");
+        submitBtn.innerText = originalText;
+        submitBtn.disabled = false;
+      }
+    } catch (error) {
+      alert("Oops! There was a problem submitting your form");
+      submitBtn.innerText = originalText;
+      submitBtn.disabled = false;
+    }
+  });
+}
