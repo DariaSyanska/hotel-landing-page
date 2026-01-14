@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Confirmed | LOFT HOTEL</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/svg+xml" href="images/logo-hotel.svg" />
+  </head>
+  <body>
+    <header
+      class="header"
+      style="background-color: rgba(0, 0, 0, 0.95); padding: 15px 0"
+    >
+      <div class="container header_container" style="justify-content: center">
+        <a href="index.html" class="logo">Loft hotel</a>
+      </div>
+    </header>
+
+    <section
+      style="
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: var(--bg-light);
+      "
+    >
+      <div class="container" data-aos="fade-up">
+        <div
+          style="
+            font-size: 4rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+          "
+        >
+          <i class="fas fa-check-circle"></i>
+        </div>
+
+        <h1 class="section-title" style="margin-bottom: 20px">Thank You!</h1>
+
+        <p
+          style="
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: var(--text-light);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+          "
+        >
+          Your booking request has been received successfully. <br />
+          Our manager will contact you shortly to confirm the details.
+        </p>
+
+        <a href="index.html" class="btn-primary">Back to Home</a>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
+  </body>
+</html>
