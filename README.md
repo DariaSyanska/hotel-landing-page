@@ -1,39 +1,23 @@
-# Loft Hotel Landing Page
+# 🏨 Loft Hotel - Luxury Landing Page
 
-This is a responsive landing page for **Loft Hotel**, built with HTML, CSS, and Tailwind CSS.  
-The website presents a modern, stylish hotel interface with sections like About, Rooms, Gallery, Contact, and a Footer.
+A modern, responsive landing page for a luxury hotel in New York featuring functional booking logic.
 
-## 📁 Project Structure
+🔗 **[Live Demo]()**
 
-📦 hotel-landing-page
-├── index.html
-├── /images
-└── /css
+## ✨ Features
+- **Responsive Design**: Fully adapted for Mobile, Tablet, and Desktop.
+- **JS Price Calculator**: Real-time automatic calculation of the total cost based on selected dates and room type.
+- **Date Logic**: Smart validation prevents selecting past dates or a check-out date earlier than the check-in date.
+- **Formspree Integration**: Functional booking form that sends submissions directly to email.
+- **Animations**: Smooth scroll reveal animations (AOS) and interactive button hover effects.
+- **Gallery**: Lightbox integration for viewing room images.
 
-## ⚙️ Technologies Used
+## 🛠 Tech Stack
+- HTML5 (Semantic)
+- CSS3 (Flexbox, Grid, CSS Variables, Animations)
+- JavaScript (ES6+, DOM Manipulation)
+- Libraries: AOS.js, GLightbox
 
-- HTML5
-- Tailwind CSS
-- Google Fonts
-- Responsive design
-
-## 📷 Sections Included
-
-- Hero with hotel name
-- About section
-- Rooms description
-- Photo gallery
-- Contact form
-- Footer with links
-
-## Demo
-https://hotel-landing-page-pi-amber.vercel.app/
-
-## 📩 Contact
-
-For questions or collaboration:  
-📧 daria.syanska@gmail.com
-
----
-
-© 2025 Loft Hotel. All rights reserved.
+## 🚀 How to Run
+1. Clone the repository.
+2. Open `index.html` in your browser.
